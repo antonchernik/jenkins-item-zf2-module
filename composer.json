@@ -1,0 +1,31 @@
+{
+  "name": "core2b/jenkins-item-zf2-module",
+  "description": "Jenkins ZF2 module",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "tags": [
+    "zend framework 2",
+    "zf2",
+    "phpunit"
+  ],
+  "authors": [
+    {
+      "name": "Anton Chernik",
+      "email": "anton@chernik.info"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-intl" : "*",
+    "phpunit/PHPUnit": "~4.0",
+    "zendframework/zendframework": "2.*",
+    "theseer/phpdox": "*",
+    "phing/phing": "2.*",
+    "squizlabs/php_codesniffer": "2.*",
+    "phpmd/phpmd" : "@stable",
+    "sebastian/phpcpd": "*",
+    "sebastian/phpdcd": "*",
+    "phploc/phploc": "*"
+  }
+}
