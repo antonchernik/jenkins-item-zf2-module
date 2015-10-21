@@ -43,6 +43,7 @@
 
    <fileset dir="${project.basedir}/src">
     <include name="**/*.php" />
+    <exclude name="vendor/"/>
    </fileset>
 
    <fileset dir="${project.basedir}/src/test">
