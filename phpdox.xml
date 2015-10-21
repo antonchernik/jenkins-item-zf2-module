@@ -7,7 +7,7 @@
             <exclude mask="**/*test*" />
             <exclude mask="*Autoload.php" />
             <exclude mask="bootstrap.php" />
-            <exclude mask="autoload_classmap.php" />
+            <exclude mask="**autoload_classmap.php**" />
             <exclude mask="**Module.php**" />
             <exclude mask="**vendor**" />
             <exclude mask="**migration**" />
