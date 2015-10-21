@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://xml.phpdox.net/config">
-  <project name="Example" source="${basedir}/src" workdir="${basedir}/build/api/xml">
-    <collector backend="parser" publiconly="false">
-        <include mask="*.php" />
-        <exclude mask="**/*test*" />
-        <exclude mask="vendor" />
-    </collector>
-    <generator output="${basedir}/build/api">
-      <build engine="html" output="html"/>
-    </generator>
-  </project>
+    <bootstrap />
+    <project name="Zf2 module" source="${basedir}/src" workdir="${basedir}/build/api/xml">
+        <collector publiconly="false" backend="parser">
+            <include mask="*.php" />
+            <exclude mask="**/*test*" />
+            <exclude mask="*Autoload.php" />
+            <exclude mask="bootstrap.php" />
+            <exclude mask="autoload_classmap.php" />
+            <exclude mask="**Module.php**" />
+            <exclude mask="**vendor**" />
+            <exclude mask="**migration**" />
+            <exclude mask="**config**" />
+            <inheritance resolve="true">
+            </inheritance>
+        </collector>
+        <generator output="${basedir}/build/api">
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
 </phpdox>
