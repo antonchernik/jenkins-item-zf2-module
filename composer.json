@@ -18,8 +18,7 @@
   "require": {
     "php": ">=5.4",
     "ext-intl" : "*",
-    "phpunit/php-token-stream":"1.4.5",
-    "phpunit/PHPUnit": "~4.0",
+    "phpunit/PHPUnit": "5.0.*",
     "zendframework/zendframework": "2.*",
     "theseer/phpdox": "*",
     "phing/phing": "2.*",
