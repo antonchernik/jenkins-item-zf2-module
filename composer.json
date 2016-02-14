@@ -26,6 +26,6 @@
     "phpmd/phpmd" : "@stable",
     "sebastian/phpcpd": "*",
     "sebastian/phpdcd": "*",
-    "phploc/phploc": "*"
+    "phploc/phploc": "2.0.*"
   }
 }
